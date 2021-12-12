@@ -1,7 +1,7 @@
-name: ci
+name: Deploy
 
 on:
-  pull_request:
+  push:
     branches:
       - master
 
@@ -38,3 +38,14 @@ jobs:
       - name: Run linter 👀
         run: npm run lint
 
+      - name: Run build ⚙️
+        run: npm run build
+
+      - name: Generate static files 📁
+        run: npm run generate
+
+      - name: Deploy to GitHub Pages 🚀
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
