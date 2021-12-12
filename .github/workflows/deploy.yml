@@ -6,7 +6,8 @@ on:
       - master
 
 jobs:
-  ci:
+  deploy:
+    name: Build & Deploy to Github Pages
     runs-on: ${{ matrix.os }}
 
     strategy:
