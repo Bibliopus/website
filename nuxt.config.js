@@ -56,8 +56,12 @@ export default {
   },
 
   i18n: {
-    locales: ['en', 'fr'],
+    locales: [
+      { code: 'en', iso: 'en-US', file: 'en.json' },
+      { code: 'fr', iso: 'fr-FR', file: 'fr.json' }
+    ],
     defaultLocale: 'en',
-    strategy: 'prefix'
+    strategy: 'prefix',
+    langDir: '~/locales/'
   }
 }

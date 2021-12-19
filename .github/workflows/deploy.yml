@@ -33,6 +33,12 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
+      - name: Download locales from Localazy 🗺️
+        uses: localazy/download@v1
+        with:
+          read_key: ${{ secrets.LOCALAZY_READ_KEY }}
+          write_key: ${{ secrets.LOCALAZY_WRITE_KEY }}
+
       - name: Install dependencies 👨🏻‍💻
         run: npm ci --prefer-offline --no-audit
 
