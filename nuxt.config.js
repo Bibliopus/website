@@ -36,7 +36,9 @@ export default {
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
     // https://tailwindcss.com/docs/guides/nuxtjs
-    '@nuxt/postcss8'
+    '@nuxt/postcss8',
+    // https://color-mode.nuxtjs.org/
+    '@nuxtjs/color-mode'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -63,5 +65,9 @@ export default {
     defaultLocale: 'en',
     strategy: 'prefix',
     langDir: '~/locales/'
+  },
+
+  colorMode: {
+    classSuffix: ''
   }
 }
