@@ -38,7 +38,9 @@ export default {
     // https://tailwindcss.com/docs/guides/nuxtjs
     '@nuxt/postcss8',
     // https://color-mode.nuxtjs.org/
-    '@nuxtjs/color-mode'
+    '@nuxtjs/color-mode',
+    // https://image.nuxtjs.org/
+    '@nuxt/image'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
