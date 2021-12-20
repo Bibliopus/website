@@ -44,7 +44,9 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://i18n.nuxtjs.org/
-    '@nuxtjs/i18n'
+    '@nuxtjs/i18n',
+    // https://sitemap.nuxtjs.org/
+    '@nuxtjs/sitemap'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -69,5 +71,9 @@ export default {
 
   colorMode: {
     classSuffix: ''
+  },
+
+  sitemap: {
+    hostname: 'https://bibliopus.app'
   }
 }
